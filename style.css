@@ -1,0 +1,154 @@
+/* Reset da página - Remove as margens e preenchimentos padrões dos elementos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho - Define a cor de fundo e o espaçamento */
+body > header {
+    background-color: #2f3648;
+    padding: 16px 0;
+    color: #f5f6fa; /* Cor do texto */
+}
+
+/* Alinhamento do conteúdo dentro do cabeçalho */
+header .container {
+    display: flex;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Espaça os itens nas extremidades */
+    
+}
+
+/* Estilo dos itens do menu de navegação - Define a fonte e espaçamento */
+header li {
+    display: inline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px; /* Espaçamento entre os itens do menu */
+}
+
+/* Estilo dos links do menu - Cor e remoção da linha de sublinhado */
+header li a {
+    color: #f5f6fa;
+    text-decoration: none;
+}
+
+/* Centralização do conteúdo da página */
+.container {
+    max-width: 1366px;
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Estilo da seção de artigos - Organização e espaçamento */
+.articles {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os artigos quebrem linha se necessário */
+    justify-content: space-between; /* Distribui os artigos igualmente */
+}
+
+/* Imagens dos artigos - Ocupa toda a largura disponível */
+.articles article img {
+    width: 100%;
+}
+
+/* Estilo dos artigos - Define largura, alinhamento e espaçamento */
+.articles article {
+    width: 30%; /* Largura de cada artigo */
+    display: flex;
+    flex-direction: column; /* Alinha o conteúdo verticalmente */
+    justify-content: space-between; /* Espaça os elementos no topo e base */
+}
+
+/* Espaçamento entre o parágrafo e o botão */
+.articles article p {
+    flex-grow: 1; /* Faz o parágrafo ocupar o espaço disponível */
+    margin-bottom: 16px; /* Espaçamento inferior */
+}
+
+/* Estilo das seções - Define o espaçamento interno */
+section {
+    padding: 16px 0;
+}
+
+/* Margem inferior para os títulos das seções e artigos */
+section h2,
+.articles article {
+    margin-bottom: 16px;
+}
+
+/* Estilo dos títulos dos artigos - Define tamanho da fonte e espaçamento */
+.articles article h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+/* Estilo dos botões "Ler mais" - Cor, tamanho e espaçamento */
+.articles article a {
+    background-color: blue; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 8px; /* Espaçamento interno do botão */
+    display: inline-block; /* Faz o botão se comportar como um bloco */
+    text-decoration: none; /* Remove a sublinhado do texto */
+    font-weight: bold;
+    margin-top: auto; /* Empurra o botão para o final do artigo */
+    width: 20%;
+}
+
+/* Efeito hover no botão "Ler mais" - Adiciona sublinhado ao passar o mouse */
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do texto dentro dos artigos - Define a fonte */
+.articles article p,
+.articles article a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Tamanho da fonte dos títulos das seções */
+section h2 {
+    font-size: 32px;
+}
+
+/* Estilo da seção de esportes - Cor de fundo e botão */
+#sports {
+    background-color: rgba(0, 255, 0, 0.1); /* Fundo verde claro */
+}
+
+#sports .articles article a {
+    background-color: #009432; /* Botão verde escuro */
+}
+
+/* Estilo da seção de economia - Cor de fundo e botão */
+#economy {
+    background-color: #f8f59f; /* Fundo amarelo claro */
+}
+
+#economy .articles article a {
+    background-color: #ff9f1a; /* Botão laranja */
+}
+
+/* Estilo da seção de tecnologia - Cor de fundo e botão */
+#tech {
+    background-color: rgba(255, 0, 0, 0.1); /* Fundo vermelho claro */
+}
+
+#tech .articles article a {
+    background-color: brown; /* Botão marrom */
+}
+
+/* Estilo da seção de entretenimento - Cor de fundo e botão */
+#entre {
+    background-color: rgba(0, 0, 255, 0.1); /* Fundo azul claro */
+}
+
+#entre .articles article a {
+    background-color: #1e3799; /* Botão azul escuro */
+}
+
+/* Centralização do texto no rodapé */
+footer p {
+    text-align: center;
+}
